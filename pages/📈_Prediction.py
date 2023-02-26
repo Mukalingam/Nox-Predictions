@@ -41,6 +41,15 @@ right: 2rem;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 def load():
   model=load_model("nox_predictictions.h5")
   return model
