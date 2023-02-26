@@ -1,0 +1,2 @@
+tensorflow
+streamlit==1.14.1
